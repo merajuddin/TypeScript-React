@@ -1,4 +1,5 @@
 import * as React from 'react';
+import './Hello.css'
 
 export interface Props {
     name: string;
@@ -18,7 +19,7 @@ class Hello extends React.Component<Props, State>{
     onIncrement = () => this.updateEnthusiasm(this.state.currentEnthusiasm + 1);
     onDecrement = () => this.updateEnthusiasm(this.state.currentEnthusiasm - 1);
 
-    render (){
+    render() {
         const {name} = this.props;
 
         if (this.state.currentEnthusiasm <= 0) {
