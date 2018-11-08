@@ -25,7 +25,6 @@ class Hello extends React.Component<Props, State>{
         if (this.state.currentEnthusiasm <= 0) {
             throw new Error('You could be a little more enthusiastic. :D');
         }
-
         return (
             <div className="hello">
                 <div className="greeting">
@@ -36,7 +35,6 @@ class Hello extends React.Component<Props, State>{
             </div>
         )
     }
-
 
     updateEnthusiasm(currentEnthusiasm: number) {
         this.setState({currentEnthusiasm});
