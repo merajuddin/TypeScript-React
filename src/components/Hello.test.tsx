@@ -22,4 +22,3 @@ it('throws when the enthusiasm level is negative', () => {
         enzyme.shallow(<Hello name='Mohammad' enthusiasmLevel={-1} />);
     }).toThrow();
 });
-
